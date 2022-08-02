@@ -1,20 +1,11 @@
 function  calcular(){
-    let primerNro = prompt("Ingresa el primer numero")
-    let segundoNro = prompt("Ingresa el segundo numero")
-    let operador = prompt( "Selecciona la operacion +, -, /, *")
-    console.log ("resultado", realizarCalculo (primerNro, segundoNro, operador))
-} 
+    let primerNro = parseInt (prompt("Ingresa el monto que desea solicitar"))
+    let segundoNro = parseInt (prompt("Ingresa la cantidad de cuotas que desea pagar"))
+        if ( segundoNro = 12){
+            console.log ("cuota mesual", realizarCalculo)   
+}
+}
 
-function realizarCalculo (num1, num2, ope){
-    switch (ope){
-        case "+": return num1 + num2
-
-        case "-": return num1 - num2
-
-        case "*": return num1 * num2
-
-        case "/": return num1 / num2
-
-        default: "Error en el calculo"
-    }
+function realizarCalculo (primerNro, segundoNro){
+   (primerNro/segundoNro)* 10
 }
